@@ -129,3 +129,116 @@ for x in adj:
     for y in car:
         print(x,y)
 
+"""
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+In Python a function is defined using the def keyword:
+"""
+
+def my_function():
+    print("Nishant has 1 cr package")
+
+my_function()
+
+"""
+Arguments - Information can be passed into functions as arguments.
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want,
+ just separate them with a comma.
+The following example has a function with one argument (fname). When the function is called, we pass along a first name,
+ which is used inside the function to print the full name:
+"""
+
+def my_full_name(sirname):
+    print("Nishant "+sirname)
+
+my_full_name("Gupta")
+my_full_name("Mittal")
+
+"""
+From a function's perspective:
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the value that is sent to the function when it is called.
+"""
+
+"""
+Number of Arguments
+By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2
+ arguments, you have to call the function with 2 arguments, not more, and not less.
+"""
+
+def fullname(fname,lname):
+    print("my full name is " +fname+" "+lname)
+
+fullname("Nishant","Gupta")
+
+"""Arbitrary Arguments, *args
+If you do not know how many arguments that will be passed into your function, add a * before the parameter name 
+in the function definition.
+This way the function will receive a tuple of arguments, and can access the items accordingly:"""
+
+def my_kids(*kids):
+    print("My  kids are "+" and ".join(kids))
+
+my_kids('Dhven','Arnav')
+
+"""
+Default Parameter Value
+The following example shows how to use a default parameter value.
+If we call the function without argument, it uses the default value:
+"""
+
+def my_country(country='India'):
+    print(f"my country is {country}")
+
+my_country('USA')
+my_country()
+my_country('Austrlia')
+
+"""
+Passing a List as an Argument
+You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated 
+as the same data type inside the function.
+E.g. if you send a List as an argument, it will still be a List when it reaches the function:
+"""
+
+def myStapleDiet(food):
+    for x in food:
+        print(x)
+
+fruits=['apple','orange','Banana']
+
+myStapleDiet(fruits)
+
+def mykeyInterest(skill):
+    for x in skill:
+        print(x)
+
+fortay=['PO','BA','Analytics']
+
+mykeyInterest(fortay)
+
+"""
+Return Values
+To let a function return a value, use the return statement:
+"""
+
+def multiplication(n):
+    return 5 * n
+
+print(multiplication(2))
+print(multiplication(3))
+
+# creating a function to write factorial of a number
+def factorial(n):
+    num = 1 # Initialize num to 1
+    while n>=1:
+        num = num *n
+        n = n-1
+    return num
+
+print(factorial(5))
+
+
+
+
