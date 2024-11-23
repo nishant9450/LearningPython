@@ -278,8 +278,36 @@ def tripler_function(m):
 tripler= tripler_function(3)
 print(tripler(12))
 
+# array
+# Creating multiple values in a single variable
+cars = ['volvo','muruti','BMW']
+
+# checking first acr in the list
+print(cars[0])
+
+#Return the number of elements in the cars array:
+x= cars[0]
+print(len(x))
+
+# You can use the for in loop to loop through all the elements of an array.
+for x in cars:
+    print(x)
+
+# Adding Array Elements
+# You can use the append() method to add an element to an array.
+cars.append('honda')
+print(cars)
 
 
+# Removing Array Elements
+# You can use the pop() method to remove an element from the array.
+cars.pop(2)
+print(cars)
+
+#You can also use the remove() method to remove an element from the array.
+# Note: The list's remove() method only removes the first occurrence of the specified value.
+cars.remove('honda')
+print(cars)
 
 
 
