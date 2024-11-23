@@ -239,6 +239,51 @@ def factorial(n):
 
 print(factorial(5))
 
+"""
+Python Lambda
+A lambda function is a small anonymous function.
+A lambda function can take any number of arguments, but can only have one expression.
+Syntax
+lambda arguments : expression
+"""
+
+#adding 10 to a agrument and returning the result
+x = lambda a:a+10
+print(x(5))
+
+#Lambda functions can take any number of arguments:
+y = lambda a,b:a*b
+print(y(3,5))
+print(y(4,4))
+
+z= lambda m,n,o:m+n-o
+print(z(100,150,75))
+
+"""
+Why Use Lambda Functions?
+The power of lambda is better shown when you use them as an anonymous function inside another function.
+Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:
+"""
+
+def doubler_function(n):
+    return lambda a : a*n
+
+doubler = doubler_function(5)
+print(doubler(6))
+
+# create a tripler function
+def tripler_function(m):
+    return lambda n: n*m
+
+tripler= tripler_function(3)
+print(tripler(12))
+
+
+
+
+
+
+
 
 
 
