@@ -406,7 +406,7 @@ class Person:
         mysillyobject.age = age
 
     def myfunc(ubs):
-        print("My name is " + ubs.name )
+        print("My name is " + ubs.name +" "+"and my age is "+ str(ubs.age))
         print("My age is " + str(ubs.age))
 
 p1 = Person('Deepa',24)
@@ -419,7 +419,7 @@ class Person:
         mysillyobject.age = age
 
     def myfunc(ubs):
-        print("My name is " + ubs.name )
+        print("My name is " + ubs.name  )
         print("My age is " + str(ubs.age))
 
 p1 = Person('Deepa',24)
@@ -435,6 +435,48 @@ class definitions cannot be empty, but if you for some reason have a class defin
 class Person:
   pass 
 """
+
+"""
+Python Inheritance
+Inheritance allows us to define a class that inherits all the methods and properties from another class.
+
+Parent class is the class being inherited from, also called base class.
+
+Child class is the class that inherits from another class, also called derived class.
+"""
+
+# Create a class named Manus, with firstname and lastname properties, and a printname method:
+class Manus:
+    def __init__(self,fname,lname):
+        self.fname=fname
+        self.lname=lname
+
+    def myfunc(self):
+        print("My full name is"+" "+self.fname+" "+self.lname)
+
+p4 = Manus('Dhven','Gupta')
+p4.myfunc()
+
+# Create a class named Student, which will inherit the properties and methods from the Person class:
+
+class Student(Manus):
+    pass # Use the pass keyword when you do not want to add any other properties or methods to the class.
+
+x = Student('Arnav','Gupta')
+x.myfunc()
+
+#Add a property called graduationyear to the Student class:
+
+class Student(Manus):
+    def __init__(self,fname,lname,year):
+        super().__init__(fname,lname) # super() function that will make the child class inherit all the methods and properties from its parent:
+        self.graduationyear = 2011
+
+    def welcome(self):
+        print("Welcome", self.fname, self.lname, "to the class of", self.graduationyear)
+
+x = Student('Nishant','Gupta',2011)
+x.welcome()
 
 
 
