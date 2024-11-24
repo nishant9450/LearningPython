@@ -374,6 +374,71 @@ class Banda:
 p3 = Banda('Deepa',21)
 print(p3)
 
+"""
+Objects can also contain methods. Methods in objects are functions that belong to the object.
+Let us create a method in the Person class:
+"""
+
+# Insert a function that prints a greeting, and execute it on the p1 object:
+
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("My name is" +" "+ self.name)
+        print(f"My age is"+ " "+ str(self.age)) # Convert age to a string
+
+p1 = Person('Nishant',39)
+p1.myfunc()
+
+"""
+The self Parameter
+The self parameter is a reference to the current instance of the class, and is used to access variables that belong to 
+the class.
+It does not have to be named self, you can call it whatever you like, but it has to be the first parameter of any 
+function in the class:
+"""
+class Person:
+    def __init__(mysillyobject,name,age):
+        mysillyobject.name = name
+        mysillyobject.age = age
+
+    def myfunc(ubs):
+        print("My name is " + ubs.name )
+        print("My age is " + str(ubs.age))
+
+p1 = Person('Deepa',24)
+p1.age = 25 # You can modify properties on objects like this
+p1.myfunc()
+"""
+class Person:
+    def __init__(mysillyobject,name,age):
+        mysillyobject.name = name
+        mysillyobject.age = age
+
+    def myfunc(ubs):
+        print("My name is " + ubs.name )
+        print("My age is " + str(ubs.age))
+
+p1 = Person('Deepa',24)
+del p1.age #You can delete properties on objects by using the del keyword:
+p1.myfunc()
+"""
+
+"""
+The pass Statement
+class definitions cannot be empty, but if you for some reason have a class definition with no content,
+ put in the pass statement to avoid getting an error.
+ 
+class Person:
+  pass 
+"""
+
+
+
+
 
 
 
