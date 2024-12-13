@@ -478,6 +478,91 @@ class Student(Manus):
 x = Student('Nishant','Gupta',2011)
 x.welcome()
 
+# while loop
+# print numbers 1 to 100
+
+n= 1
+while n <=100:
+    print(n)
+    n +=1
+print('Loop is finished')
+
+
+# print numbers 100 to 1
+m= 100
+while m >=1:
+    print(m)
+    m -=1
+print('Loop is finished')
+
+# Print multiplication of a number
+# i = 1
+# n= int(input("enter a number : "))
+# while i <=10:
+#     print(n*i)
+#     i = i +1
+print('Multiplication is completed')
+
+"""
+Print the elements of the following list using a while loop
+[1,4,9,16,25,36,49,64,81,100]
+"""
+
+nums = [1,4,9,16,25,36,49,64,81,100]
+
+idx = 0
+while idx < len(nums):
+    print(nums[idx])
+    idx +=1
+print('code is finished')
+
+# to print the list of peopl
+people = ['nishant','dhven','deepa','raj']
+
+b = 0
+while b < len(people):
+    print(people[b])
+    b = b+1
+print('code is finished')
+
+
+"""
+Search for a number x in this tuple using loop:
+(1,4,9,16,25,36,49,64,81,100,36)
+"""
+
+t= (1,4,9,16,25,36,49,64,81,100,36)
+i = 0
+x= 36
+while i < len(t):
+    if (t[i]==x):
+        print("found the number at index ",i )
+    else:
+        print("finding...")
+    i = i+1
+print('completed the code')
+
+# how the key word breaks works
+i = 1
+while i <=5:
+    print(i)
+    if i ==3:
+        break
+    i +=1
+print("end of loop")
+
+
+#With cotniue statement you can skin the record in question
+i = 0
+while i <=5:
+    if (i==3):
+        i = i+1
+        continue # skip
+    print(i)
+    i +=1
+
+
+
 
 
 
