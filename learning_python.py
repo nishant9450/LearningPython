@@ -560,9 +560,64 @@ while i <=5:
         continue # skip
     print(i)
     i +=1
+print('completed the code')
 
 
+# For loop
 
+# printing a list with the help of for loop
+nums = [1,2,3,4,5]
+
+for x in nums:
+    print(x)
+print('completed the code')
+
+# print all string with the help of for loop
+veggies = ['potato','brinjal','ladyfinger','cucumber']
+
+for x in veggies:
+    print(x)
+print('completed the code')
+
+# print all tuple with the help of for loop
+m = (1,2,3,4,5)
+
+for x in m:
+    print(x)
+print('completed the code')
+
+
+# for loop with else statement
+
+str = "apnacollege"
+
+for x in str:
+    print(x)
+else:
+    print('*** End of loop ***')
+
+
+for x in str:
+    if (x == 'o'):
+        print("o found")
+        break
+    print(x)
+else:
+    print("End")
+
+print("** end of Code ***")
+
+num= [1,4,9,16,25,36,49,64,81,100,49]
+x= 49
+
+idx = 0
+
+for el in num:
+    if(el ==x):
+        print("number found at idx", idx)
+    idx +=1
+
+print("** end of Code ***")
 
 
 
