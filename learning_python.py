@@ -619,6 +619,98 @@ for el in num:
 
 print("** end of Code ***")
 
+# range function
+
+seq = range(5)
+
+for x in seq:
+    print(x)
+
+print("** end of Code ***")
+
+for x in range(0,10,2): # 0 is from , 10 is to end number and 2 is skip number (start,end, skip)
+    print(x)
+
+print("** end of Code ***")
+
+# print numbers 100 to 1 using for loop
+
+
+for z in range(100,0,-1): # the end number is used as 0 since we want to print 1 and skip as -1 since we want to reduce numbers
+    print(z)
+print("** end of Code ***")
+# Print multiplication of a number using for loop
+
+# m = 11
+# n = int(input("Input a number whose multiplication is required: "))
+# for x in range(1,m):
+#     print (x * n)
+# print("** end of Code ***")
+
+"""
+pass is null statement that does nothing. it is used as a place holder for future code
+"""
+
+# find sum of fist n numbers using a for loop
+n = 5
+sum = 0
+for i in range(n+1):
+    sum +=i
+print(" Total sum is ",sum)
+print("** end of Code ***")
+
+n = 10
+sum = 0
+i=1
+while i <= n:
+    sum +=i
+    i +=1
+
+print(" Total sum is ",sum)
+print("** end of Code ***")
+
+
+# Factorial of a number using for while loop
+
+n = 5
+fact = 1
+i = 1
+while i <=n:
+    fact *=i
+    i +=1
+print("factorial of a number is ", fact)
+print("** end of Code ***")
+
+# Factorial of number using for loop
+
+n= 5
+fact= 1
+
+for i in range (1,n+1):
+    fact *= i
+
+print("factorial of a number" ,fact)
+# Factorial of number using for loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
